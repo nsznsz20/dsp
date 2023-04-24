@@ -2,9 +2,7 @@
 #define _DSP_DSP_H
 
 #include "Biquad.h"
-#include "Bmod.h"
 #include "ButterVA.h"
-#include "Chorus330.h"
 #include "Clock.h"
 #include "Counter.h"
 #include "Dcblock.h"

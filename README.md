@@ -10,7 +10,7 @@ Collection of C++ classes for sound synthesis.
 
 # BASED ON...
 * simple effects (filters, delay, oscillators...) are straightforward implementations of the well-known algorithms
-* many classes are direct translations of *Pure Data* abstractions made by **Scott Nordlund** (also known as acreil)
+//* many classes are direct translations of *Pure Data* abstractions made by **Scott Nordlund** (also known as acreil)
 * Virtual Analog (VA) filters taken from *The Art of VA Filter Design* by **Vadim Zavalishin**
 
 

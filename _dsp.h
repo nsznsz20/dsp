@@ -16,8 +16,6 @@
 #include "Onepole.h"
 #include "OscGS.h"
 #include "Phasor.h"
-#include "Pois.h"
-#include "Poislin.h"
 #include "Ramp.h"
 #include "randomness.h"
 #include "Sawbl.h"
@@ -25,11 +23,6 @@
 #include "Superphasor.h"
 #include "SvfVA.h"
 #include "utilities.h"
-#include "Yafr2.h" ///////////////////////////////////////////////
-
-#include "Reverb/Earlyref.h"
-#include "Reverb/Multitap.h"
-#include "Reverb/Reverb727.h"
-
+#include "Yafr2.h"
 
 #endif // // include guard

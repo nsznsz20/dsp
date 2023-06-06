@@ -4,7 +4,7 @@ Collection of C++ classes for sound synthesis.
 * Optimized for simplicity, not for performance.
 
 # REQUIREMENTS
-* <cmath>, <random>, <time.h> (just for seed initialization).
+* \<cmath\>, <random>, <time.h> (just for seed initialization).
 * At least C++17: for "inline static" member variables.
 
 

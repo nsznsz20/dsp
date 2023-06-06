@@ -4,16 +4,16 @@ Collection of C++ classes for sound synthesis.
 * Optimized for simplicity, not for performance.
 
 # REQUIREMENTS
-* cmath, time.h (just for seed initialization).
+* <cmath>, <random>, <time.h> (just for seed initialization).
 * At least C++17: for "inline static" member variables.
 
 
-# BASED ON...
+# SOURCES
 * simple effects (filters, delay, oscillators...) are straightforward implementations of the well-known algorithms
 * Virtual Analog (VA) filters taken from *The Art of VA Filter Design* by **Vadim Zavalishin**
 
 
-# NAMING CONVENTIONS:
+# NAMING CONVENTIONS
 x: obvious input
 
 y: obvious output
@@ -37,7 +37,7 @@ r: filter resonance
 g: VA filters frequency constant (as in Zavalishin's book)
 
 
-# DESIGN CHOICES:
+# DESIGN CHOICES
 * All members are public
 
 * ... but no variable should be modified directly from the outside.

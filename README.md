@@ -42,13 +42,13 @@ g: VA filters frequency constant (as in Zavalishin's book)
 
 * ... but no variable should be modified directly from the outside.
 
-* No object relies on implicit constructors (neither on implicit copy constructors, so for every object there is a copy constructor manually defined). All constructors, except copy constructors, are marked "explicit". Copy constructors do copy only variables relevant to internal computation, omitting variables that are defined from scratch on each sample update. Also, they guarantee no unnecessary recalculations, but random initializations will be repeated, so the copy may be not exact.
+* No object relies on implicit constructors (neither on implicit copy constructors, so for every object there is a copy constructor manually defined). All constructors, except copy constructors, are marked "explicit". Copy constructors do copy only variables relevant to internal computation, omitting variables that are defined from scratch on each sample update. They guarantee no unnecessary recalculations, but random initializations will be repeated, so the copy may be not exact.
 
-* For any object that has a "operator()", it updates the state of the object. In general, methods that modify the parameters of the object should be called before "operator()", and all data of the object should be accessed after it. If some method is to be called after "operator()" its name ends in "_post", and if some data is to be read before "operator()" is called, its name ends in "_prev". Accessing data not marked "_prev" before "operator()" has ever been called has undefined behavior.
+* For any object that has an "operator()", it updates the state of the object. In general, methods that modify the parameters of the object should be called before "operator()", and all data of the object should be accessed after the call. If some method is to be called after "operator()" its name ends in "_post", and if some data is to be read before "operator()" is called, its name ends in "_prev". Accessing data not marked "_prev" before "operator()" has ever been called has undefined behavior.
 
-* IF a variable has appended underscore THEN has both getter and setter defined. Those are methods taking the name of the variable, without underscore, and the setter might be of "_prev" type.
+* If a variable has appended underscore then has both getter and setter defined. Those are methods taking the name of the variable, without underscore, and the setter might be of "_prev" type.
 
-* A variable has getter IFF it has setter.
+* A variable has getter if and only if it has setter.
 
 * Templates are not used.
 
